@@ -59,7 +59,7 @@ resource "aws_route_table" "my-rtb" {
   
 }
 
-resource "aws_route_table_association" "my-vpc-rtba" {
+resource "aws_route_table_association" "my-vpc-rtba-private" {
     route_table_id = aws_route_table.my-rtb.id
     subnet_id = aws_subnet.my-vpc-private.id
   
